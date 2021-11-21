@@ -1,0 +1,74 @@
+body{
+    height:900px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/22/21/16/bullets-2166491_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    background-color:white;
+    padding:20px;
+}
+ul{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.mainmenu>li{
+    display:inline-block;
+    
+}
+a{
+    text-decoration: none;
+    position:relative;
+    
+}
+.submenu , .supersubmenu{
+    display:none;
+    position:absolute;
+}
+li:hover{
+    background-color:darkorchid;
+    padding:10px;
+}
+nav .mainmenu li:hover .submenu{
+    display:block;
+    background-color:cyan;
+}
+nav .supersubmenu{
+    transform:translate(100%,-20%);
+}
+nav .mainmenu .submenu li:hover .supersubmenu{
+    display:block;
+    background-color:cyan;
+}
+.arrow{
+    display:inline-block;
+    border:2px solid black;
+    position:relative;
+    height:8px;
+    width:8px;
+    border-left:none;
+    border-top:none;
+    color:black;
+    margin-left:5px;
+}
+.arrowdown{
+    transform:rotate(45deg);
+}
+.arrowright{
+    transform:rotate(-40deg);
+}
+form{
+    margin-top:300px;
+}
+input{
+    width:60%;
+    text-align:center;
+    margin-left:13%;
+    height:50px;
+}
+button{
+    padding:16px;
+}
